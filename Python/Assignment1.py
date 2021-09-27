@@ -3,7 +3,7 @@ physics_marks = int(input("Enter the marks of Physics: "))
 maths_marks=int(input("Enter the marks of Maths: "))
 chemistry_marks=int(input("Enter the marks of Chemistry: "))
 
-for i in range (1, no_of_students):
+for i in range (no_of_students):
     if physics_marks>50 and chemistry_marks>50 and maths_marks>50 : 
         print("Congratulations! You pass bruh..")
     elif physics_marks>50 and chemistry_marks>50 and maths_marks<=50:
