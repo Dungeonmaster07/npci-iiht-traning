@@ -1,10 +1,22 @@
 lst = ['ram', 'shyam', 'subham', ['mohsin', 'ramesh']]
 lst0 = lst[:3]
 lst1 = lst[3:]
-my_string0 = ','.join(lst0)
 
+
+for ele in lst0:
+    if ele == ' ' or ele in lst1:
+        print("null record found...")
+        break
+    else:
+        my_string0 = ','.join(ele)
 for _ch in lst1:
-    my_string1 = ','.join(_ch)
+    if _ch == ' ' or _ch in lst0:
+        print("duplicate or null records found...")
+        break
+
+    else:
+        my_string1 = ','.join(_ch)
+
 
 my_string3 = my_string0 + ',' + my_string1
 
